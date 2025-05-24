@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complete CSS practice part 1.</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      h1 {
+        color: red;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--<h1 style="color: red; background-color: yellow;">Methods of Adding CSS in any HTML file.</h1>-->
+    <h1>Methods of Adding CSS in any HTML file.</h1>
+    <div>
+      <ol>
+        <li>
+          <strong>Inline CSS:-</strong> Inline Css is used by the style
+          attribute in a required HTML tag.
+        </li>
+        <li>
+          <strong>Internal CSS:-</strong> Internal CSS is used by using style
+          tag which lies inside the head tag.
+        </li>
+        <li>
+          <strong>External CSS:-</strong>External CSS is used by creating a
+          external file and link it with the HTML file by using "link:css" tag
+          in html.
+        </li>
+      </ol>
+    </div>
+
+    <!--Selectors in CSS-->
+    <h1>Selectors in CSS</h1>
+
+    <!--1 Element Selector-->
+    <h3>1. Element Selector.</h3>
+    <span> I am a Span . </span>
+
+    <!--2 Class selector-->
+    <h3>2. Class Selector.</h3>
+    <div class="div2">I am a second Div.</div>
+
+    <!--3 Id selector-->
+    <h3>3. Id Selector.</h3>
+    <div id="div3">I am a Third div.</div>
+
+    <!--4 Child Selector-->
+    <h3>4. Child Selector.</h3>
+    <div>
+      <pre>hey! I am a Paragraph.</pre>
+    </div>
+
+    <!--5 Decendent Selector-->
+    <h3>5. Decendent Selector.</h3>
+    <div>
+      <span>
+        <p>Hey ! I am a decendent paragraph.</p>
+      </span>
+    </div>
+
+    <!--6 Universal selector-->
+    <h3>6. Universal Selector.</h3>
+
+    <!--7 Box model-->
+    <h3>7. Box Model</h3>
+    <div id="box1">This is box 1.</div>
+    <div id="box2">This is box 2.</div>
+
+    <!--8 Font , Text & Color Properties-->
+    <h3>8. Font , Text & Color Properties</h3>
+    <div>
+      <p id="font">
+        Hey I am a paragraph used to show how the different fonts properties are
+        used in CSS.
+      </p>
+      <p id="text">
+        Hey I am a paragraph used to show how the different text properties are
+        used in CSS
+      </p>
+      <p id="color">
+        Hey I am a paragraph used to show how the different color properties are
+        used in CSS
+      </p>
+    </div>
+
+    <!--problem practice-->
+    <h5>
+      QUESTION. write html and css code to style a paragraph inside a div which
+      contains 5 other paragraphs. the first paragraph must have background
+      color yellow and text color red. The other paragraphs must have background
+      color blue and text color white. The HTML is written below for yoyr
+      reference.
+    </h5>
+    <div>
+      <p id="problem">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum,
+        explicabo!
+      </p>
+      <p class="problem">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, unde.
+      </p>
+      <p class="problem">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, unde.
+      </p>
+      <p class="problem">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, unde.
+      </p>
+      <p class="problem">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, unde.
+      </p>
+    </div>
+
+    <!--9. units in CSS-->
+    <h3>9. Units in CSS</h3>
+
+    <div class="box">hey I am a box..</div>
+    <div class="container">
+      <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
+        repudiandae ratione natus placeat fuga, suscipit iusto iure dolore
+        earum. Numquam.
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+          architecto magnam assumenda, facere dignissimos voluptatibus
+          asperiores quae doloribus, reiciendis libero quibusdam dolore quaerat.
+        </p>
+      </div>
+    </div>
+
+    <!--10.Display properties-->
+    <h3>10. Display Properties</h3>
+    <div class="display">this is a box 1 and it is a block element .</div>
+    <div class="display1">this is a box 2 and it is a block element.</div>
+
+    <span class="sdisplay">hey I am an inline element</span>
+    <span class="sdisplay1">hey I am also an second inline element</span>
+
+    <!--11. Shadow & Outline-->
+    <h3>11. Shadow & Outline</h3>
+    <div class="textshadow">this is a box which shows text shadow.</div>
+    <div class="boxshadow">this is a box which shows box shadow.</div>
+    <div class="outline">this is a box which shows outline shadow.</div>
+
+    <!--12. Styling of Lists-->
+    <h3 style="margin-top: 25px">12. Styling of lists</h3>
+
+    <nav style="margin-top: 25px">
+      <ul>
+        <li>Home</li>
+        <li>Contacts</li>
+        <li>About Us</li>
+        <li>Skills</li>
+      </ul>
+    </nav>
+    <!--13. Overflow Properties-->
+    <h3>13. Overflow Properties.</h3>
+    <div class="overflow">
+      hey I am a div and explain how overflow properties in css work Lorem ipsum
+      dolor sit amet consectetur adipisicing elit. Dolorem sed perspiciatis
+      facere nemo itaque libero a, officiis quasi quos pariatur totam
+      necessitatibus, similique recusandae saepe quam vero magni? Aspernatur
+      deleniti minus possimus optio quod perferendis ipsum repellendus beatae
+      perspiciatis enim?
+    </div>
+  </body>
+</html>
