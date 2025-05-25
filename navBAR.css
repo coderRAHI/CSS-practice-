@@ -1,0 +1,55 @@
+@media only screen and (max-width:400px){
+      .content{
+        background-color: blueviolet;
+      } 
+      
+    }
+   
+    :root{
+        --color:rgb(250, 9, 50);
+        --seccolor:rgb(245, 139, 157);
+    }
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+   display: flex;
+   list-style-type: none;
+   justify-content: center;
+}   
+   
+li{
+    padding-left: 100px;
+}
+
+
+
+.navbar{
+    
+   background-color: var(--color);
+    width: 100vw;
+    height: 40px;
+}
+    
+body{
+     background-color: var(--seccolor);
+     
+    
+}
+.content{
+ display: flex;
+ width: 100vw;
+ 
+}
+
+.box{
+width: 400px;
+height: 400px;  
+background-color: grey;
+border: 2px solid black;
+margin: 10px; 
+}
+
