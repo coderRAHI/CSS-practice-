@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables in CSS</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+   /*given below are the global variables */
+        :root{
+            --color:rgb(1, 107, 43) ;
+            --seccolor:rgb(1, 145, 13);
+            --defpad:23px;
+        }
+      div ul {
+        display: flex;
+        list-style-type: none;
+        border: 2px solid black;
+    }
+        
+
+      li{
+
+        padding: 23px;
+      }
+
+      li:first-child{
+        /*given below are the local variable */
+        --color:red;
+        background-color: var(--color);
+      }
+
+      .nav {
+        background-color:var(--color);
+        color: white;
+        
+      }
+
+      .container{
+        padding: var(--defpad) ;
+        border: 2px solid black;
+        background-color: var(--seccolor);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <li>home</li>
+        <li>about</li>
+        <li>contact</li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora,
+      assumenda! Reiciendis sit facere odio beatae dignissimos dolores qui
+      laudantium? Earum a blanditiis numquam enim optio dicta dolorem non,
+      temporibus aliquid harum totam accusantium quam. Delectus error et minima
+      quis ea doloremque maxime nihil nam incidunt sequi.</p>
+    </div>
+  </body>
+</html>
