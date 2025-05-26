@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More On CSS Selectors</title>
+    <style>
+       /* .box:first-child{
+            color: red;
+        }*/
+
+       /* .box::first-line{
+            color: blue;
+        }
+
+        .box:nth-child(2)::first-line{
+            color: red;
+        }*/
+
+        /*.boxes *{
+            color: red;
+            border: 2px solid black;
+            padding: 20px;
+        }*/
+
+       /* [data-color="primary"]{
+            background-color: yellow;
+        }*/
+
+        /*p , a ,.box ,[data-color="primary"]{
+            color: green;
+        }*/
+
+       /* .boxes::before{
+            content:" I am Before the boxes";
+        }
+        .boxes::after{
+            content:"I am after the boxes";
+        }*/
+        ::selection{
+            color: green;
+            background-color: red;
+        }
+
+        .box::first-letter{
+            color: red;
+            font-size: 30px;
+        }
+        input::placeholder{
+            color:red;
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, est?</div>
+        <div data-color="primary"    class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias?</div>
+        <div class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias?</div>
+    </div>
+    <input type="enter your name" placeholder="hey I am placeholder">
+</body>
+</html>
