@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and Clear</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+            width: 80vw;
+        }
+
+        .card{
+            border: 2px solid red;
+           
+        }
+
+        img{
+            float: right;
+        }
+
+        .card:nth-child(3){
+            clear: right;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://i.pinimg.com/736x/2a/dc/9e/2adc9e9674058add906bf048109d71f8.jpg" alt="Radha&Krishna" width="300px" height="500px">
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur explicabo dicta numquam eius est, quibusdam dolore totam minima! Hic non aspernatur at, minima voluptates reprehenderit animi odio iusto soluta rem officia. Voluptatum earum fuga doloribus qui veritatis? Harum vitae natus amet illo, repellendus modi id.</p>
+        </div>
+        <div class="card">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit beatae molestiae corporis suscipit maxime! Maiores cumque dolorem, corporis quos expedita harum ab magnam doloremque aliquam inventore iure natus et deserunt ipsum consectetur officia nostrum voluptates, cupiditate ullam doloribus pariatur minima?</p>
+        </div>
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptatibus nam dolorem, explicabo sit deserunt excepturi dignissimos totam sed? Voluptas, quidem. Laborum sint, quia optio nesciunt est officia itaque doloremque!</p>
+        </div>
+    </div>
+</body>
+</html>
