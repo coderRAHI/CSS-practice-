@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box In CSS</title>
+    <style>
+
+        .container{
+            border: 2px solid red;
+            height: 90vh;
+            display: flex;
+            flex-wrap: wrap;
+           
+            justify-content: center; /*justify-content is used to make content center only across the main axis
+            mainly in horizontal line if content in Row & in vertical line if content is in coloumn */
+            /*justify-content: space-around;
+            space justify content:space around ; is used to make space around  the items*/ 
+
+           /* justify-content: space-between space-evenly ;is use to space between the items of the container and "space-evenly" is used to give even space to the items*/
+            
+            /*align-items  is used to make content center only across the cross axis
+            mainly in vertical line if content in Row & in horizontal line if content is in coloumn */
+            align-items: center;/*align-items are used when the items of a container contain only one (single) line of a container.*/
+            flex-direction: column;/*flex direction is used to initiate the direction of the lex items */
+            align-content: center;/*align-items are used when the items of a container contain only two or more than two (double or more) line of a container.*/
+            flex-flow:row wrap;
+            /*gap: 30px;
+            row-gap: 40px;
+            column-gap: 10px;*/
+            gap: 60px 40px;/* it is a short hand for writing a code of gaps between row and columns .It state that the first value is used for Row and second is used for Columns.*/
+         
+        }
+        .items{
+            width: 90px;
+            height: 90px;
+            background-color: blueviolet;
+            border: 1px solid black;
+           flex-grow: 1;
+           flex-shrink: 2;
+           /*"flex-grow" & "flex-shrink"is used to make the item  1 take space of the give item equal to the value of the flex-grow and shrink for the flex-shrink respectively*/
+        }
+
+        .items1{
+            align-self: flex-end;
+           
+        }
+        .item2{
+            align-self: flex-start;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items1"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items2"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+       
+    </div>
+    
+</body>
+</html>
