@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform properties in CSS</title>
+    <style>
+        .container{
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid purple;
+            
+
+
+        }
+
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            background-color:chocolate;
+            border: 2px solid black;
+            
+         /*transform:rotate(45deg);
+          transform: rotateX(45deg); 
+          transform: rotateY(45deg);
+           transform: rotateZ(45deg);*/
+           
+
+           transform: scale(1.5);
+          /*  we can do same for X , Y & Z axis  */
+           
+          transform: skew(20deg);
+          /*  we can do same for X , Y & Z axis  */
+
+          transform: translate(100px);
+           /*  we can do same for X , Y & Z axis  */
+
+        
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+</html>
