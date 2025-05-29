@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating A Navbar of ultra edit website using flex box.</title>
+    <style>
+      
+      .navbar{
+        display: flex;
+        width: 90wv;
+        background-color:white;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        }
+
+      ul{
+        list-style-type: none;
+        display: flex;
+         margin-top: 30px ;
+       }
+
+      .right{
+        display:flex;
+        align-items: center;
+       }
+
+      .left{
+        display: flex;
+        align-items: center;
+      }
+
+      li{
+        font-weight: 450;
+        margin-left: 45px;
+        
+        }
+
+        .logo{
+            padding-bottom: 15px;
+         }
+
+         a{
+            text-decoration: none;
+            color: black;
+         }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="left">
+        <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Background-2.png" width="250px">
+    </div>
+    <div class="right">
+        <ul>
+            <li><a href="">Products</a></li>
+            <li><a href="">For Bussiness</a></li>
+            <li><a href="">Resources</a></li>
+            <li><a href="">Our Company</a></li>
+            <li><a href="">Language</a></li>
+            <li ><a href=""><img class="logo" src="https://t4.ftcdn.net/jpg/13/96/55/91/240_F_1396559120_iUiPjzaf8nopwPyheuHo2Y9TjlrH58F1.jpg" width="30px"></a></li>
+           
+        </ul>
+    </div>
+    </div>
+</body>
+</html>
